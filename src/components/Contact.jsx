@@ -46,7 +46,7 @@ export default function Contact() {
               <input
                 type="hidden"
                 name="_next"
-                value="https://yashdbarot.github.io/portfolio/?sent=1"
+                value="https://yashdbarot.me/portfolio/?sent=1"
               />
 
               <div className="grid gap-4 sm:grid-cols-2">
