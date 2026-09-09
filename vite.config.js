@@ -5,7 +5,8 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
   // GitHub Pages serves from /portfolio/; dev server stays at /
-  base: command === 'build' ? '/portfolio/' : '/',
+  // DEPLOY_BASE=/ for full-domain hosting (e.g. Tailscale funnel)
+  base: process.env.DEPLOY_BASE ?? (command === 'build' ? '/portfolio/' : '/'),
   plugins: [react(), tailwindcss()],
   server: {
     // allow previews through Tailscale serve

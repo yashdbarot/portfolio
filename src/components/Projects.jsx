@@ -12,11 +12,11 @@ export default function Projects() {
         description="Real problems, real datasets — shipped inside real businesses."
       />
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
           <a
             key={p.index}
-            href={profile.github}
+            href={p.url || profile.github}
             target="_blank"
             rel="noreferrer"
             className="reveal glass card-lift group flex flex-col rounded-xl p-7"

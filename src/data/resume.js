@@ -122,27 +122,48 @@ export const experience = [
 export const projects = [
   {
     index: '01',
-    title: 'Supply Chain Analytics',
-    org: 'Chandra Fashion',
+    title: 'Retail Product Matching System',
+    org: 'Syndicated Market Data',
+    url: 'https://github.com/yashdbarot/retail-product-matching',
     description:
-      'End-to-end visibility of a textile supply chain — from knitter inbound material to retail distribution — with stock-health reporting and commercial attention flags.',
-    tags: ['Excel', 'Data Modeling', 'Inventory', 'Reporting'],
+      'Multi-attribute product resolution pipeline with RapidFuzz candidate indexing, pack-size mismatch constraints, and staging release gates.',
+    tags: ['Python', 'scikit-learn', 'RapidFuzz', 'Data Quality'],
   },
   {
     index: '02',
-    title: 'KPI & Workforce Dashboards',
-    org: 'Hari Krishna Solution',
+    title: 'Sales Anomaly Investigation',
+    org: 'Store Operations Analytics',
+    url: 'https://github.com/yashdbarot/sales-anomaly-investigation',
     description:
-      'Interactive Power BI + Excel dashboards tracking KPIs, engagement and customer patterns for management — backed by cleaned, validated data pipelines.',
-    tags: ['Power BI', 'Python', 'EDA', 'Automation'],
+      'Strictly causal time-series anomaly detection and keyed RCA engine, isolating store facility closures from ingestion data dropouts.',
+    tags: ['Python', 'Pandas', 'SciPy', 'RCA Engine'],
   },
   {
     index: '03',
-    title: 'Financial Reporting Automation',
-    org: 'AICS Pvt Ltd',
+    title: 'Product Category Classification',
+    org: 'E-Commerce Taxonomy',
+    url: 'https://github.com/yashdbarot/product-category-classification',
     description:
-      'Automated recurring calculations and reconciliation workflows over purchase/sales ledgers — faster, error-free periodic reporting.',
-    tags: ['Excel', 'Automation', 'Finance', 'Data Quality'],
+      'FMCG taxonomy classifier with physical unit parsing (1L->1000ml), leak-free product-grouped splits, and novel OOD item discovery queue.',
+    tags: ['Python', 'NLP', 'TF-IDF', 'OOD Discovery'],
+  },
+  {
+    index: '04',
+    title: 'Retail Data Delivery & SLA Monitor',
+    org: 'Data Exchange Platform',
+    url: 'https://github.com/yashdbarot/retail-data-delivery-sla-monitor',
+    description:
+      'Contractual delivery schedule monitor with midnight rollover arithmetic, mandatory telemetry validation, and Feed Reliability Index (FRI).',
+    tags: ['Python', 'SLA Monitoring', 'Quality Gates', 'Pandas'],
+  },
+  {
+    index: '05',
+    title: 'Textile Inventory & Reconciliation',
+    org: 'Manufacturing & Distribution',
+    url: 'https://github.com/yashdbarot/textile-inventory-sales-reconciliation',
+    description:
+      'Multi-stage supply-chain reconciler tracking raw grey fabric to retail billing, independent job-work shrinkage, and automated openpyxl workbooks.',
+    tags: ['Python', 'openpyxl', 'Supply Chain', 'Reconciliation'],
   },
 ]
 
