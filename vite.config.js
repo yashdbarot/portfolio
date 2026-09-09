@@ -9,6 +9,7 @@ export default defineConfig(({ command }) => ({
   base: process.env.DEPLOY_BASE ?? (command === 'build' ? '/portfolio/' : '/'),
   plugins: [react(), tailwindcss()],
   server: {
+    host: '0.0.0.0',
     // allow previews through Tailscale serve
     allowedHosts: ['desktop-avdncu6.tail624501.ts.net'],
   },

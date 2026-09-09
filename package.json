@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
+    "serve:tailscale": "node serve-static.mjs 4173",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
