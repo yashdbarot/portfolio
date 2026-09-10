@@ -33,21 +33,21 @@ function DataBars() {
     group.current?.children.forEach((bar, i) => {
       const h = 0.35 + Math.abs(Math.sin(t * 0.9 + bars[i].phase)) * 2.1
       bar.scale.y = THREE.MathUtils.lerp(bar.scale.y, h, 0.12)
-      bar.material.opacity = 0.55 + Math.sin(t * 1.4 + bars[i].phase) * 0.2
+      bar.material.opacity = 0.45 + Math.sin(t * 1.4 + bars[i].phase) * 0.15
     })
   })
 
   return (
-    <group ref={group} position={[0, -1.4, -1]}>
+    <group ref={group} position={[1.4, -1.4, -1.2]}>
       {bars.map((b, i) => (
         <mesh key={i} position={[b.x, 0, 0]}>
           <boxGeometry args={[0.22, 1, 0.22]} />
           <meshStandardMaterial
             color={b.color}
             emissive={b.color}
-            emissiveIntensity={1.6}
+            emissiveIntensity={0.85}
             transparent
-            opacity={0.6}
+            opacity={0.45}
           />
         </mesh>
       ))}
@@ -81,7 +81,7 @@ function FloatingShapes() {
       </Float>
 
       <Float speed={1.1} rotationIntensity={1.4} floatIntensity={1.8}>
-        <mesh position={[-2.4, -0.6, -1.5]}>
+        <mesh position={[-3.6, 0.2, -2.5]}>
           <torusGeometry args={[0.5, 0.07, 12, 48]} />
           <meshStandardMaterial color="#22d3ee" wireframe emissive="#22d3ee" emissiveIntensity={0.5} />
         </mesh>

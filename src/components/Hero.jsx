@@ -89,8 +89,10 @@ export default function Hero() {
       <Suspense fallback={null}>
         <Scene3D />
       </Suspense>
-      {/* readability vignette */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,var(--color-void)_88%)]" />
+      {/* readability background gradients protecting hero text and actions */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,var(--color-void)_85%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-void via-void/70 to-transparent md:w-3/4" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-void to-transparent" />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pt-28 pb-20">
         <p className="hero-line font-mono text-sm tracking-widest text-neon/90">
@@ -119,10 +121,26 @@ export default function Hero() {
             get_in_touch() <ArrowUpRight className="h-4 w-4" />
           </Button>
           <div className="flex items-center gap-2 pl-1">
-            <Button as="a" href={profile.github} target="_blank" rel="noreferrer" variant="ghost" size="icon" aria-label="GitHub">
+            <Button
+              as="a"
+              href={profile.github}
+              target="_blank"
+              rel="noreferrer"
+              variant="glass"
+              size="icon-lg"
+              aria-label="GitHub"
+            >
               <GithubIcon className="h-5 w-5" />
             </Button>
-            <Button as="a" href={profile.linkedin} target="_blank" rel="noreferrer" variant="ghost" size="icon" aria-label="LinkedIn">
+            <Button
+              as="a"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              variant="glass"
+              size="icon-lg"
+              aria-label="LinkedIn"
+            >
               <LinkedinIcon className="h-5 w-5" />
             </Button>
           </div>

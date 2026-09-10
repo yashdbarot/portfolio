@@ -8,14 +8,17 @@ const buttonVariants = cva(
       variant: {
         neon: 'bg-neon text-void font-semibold hover:shadow-[0_0_35px_-6px_var(--color-neon)] hover:-translate-y-0.5',
         outline:
-          'border border-neon/40 text-neon hover:bg-neon/10 hover:border-neon hover:shadow-[0_0_25px_-8px_var(--color-neon)]',
-        ghost: 'text-slate-400 hover:text-neon',
+          'border border-neon/50 bg-void/85 backdrop-blur-md text-neon font-medium hover:bg-neon/20 hover:border-neon hover:shadow-[0_0_25px_-8px_var(--color-neon)] hover:-translate-y-0.5',
+        glass:
+          'border border-slate-400/25 bg-void/85 backdrop-blur-md text-slate-100 hover:text-neon hover:border-neon/60 hover:bg-neon/15 hover:shadow-[0_0_20px_-6px_var(--color-neon)] hover:-translate-y-0.5',
+        ghost: 'text-slate-300 hover:text-neon hover:bg-slate-400/10',
       },
       size: {
         default: 'h-11 px-6',
         sm: 'h-9 px-4 text-xs',
         lg: 'h-13 px-8 text-base',
         icon: 'h-11 w-11',
+        'icon-lg': 'h-13 w-13',
       },
     },
     defaultVariants: {
